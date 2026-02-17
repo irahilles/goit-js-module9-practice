@@ -35,12 +35,10 @@ if(storageData){
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
-
     if(!formData.email.trim() || !formData.message.trim()){
     alert('Fill please all fields');
     return;
 }
-
     console.log(formData);
     e.target.reset();
     localStorage.removeItem(key);
